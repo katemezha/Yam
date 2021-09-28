@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Products, Locations, Sales, Promos, Makers, Comments
 
 
 def index(request):
@@ -6,7 +7,8 @@ def index(request):
 
 
 def catalog(request):
-    return render(request, 'main/catalog.html')
+    products = Products.objects.all()
+    return render(request, 'main/catalog.html', {'products': products})
 
 
 def about(request):
@@ -14,6 +16,7 @@ def about(request):
 
 
 def sale(request):
-    return render(request, 'main/sale.html')
+    sale_products = Sales.objects.sort()
+    return render(request, 'main/sale.html', {'products': sale_products})
 
 

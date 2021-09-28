@@ -7,4 +7,15 @@
 {% block content %}
     <h1>Catalog</h1>
 	<p>Необычные сладости со всего мира!</p>
+    <div class="container">
+        {% for el in products %}
+            <div class="card mt-2" style="width: 28rem;">
+              <img src="{{ el.image }}" class="card-img-top" alt="{{ el.title }}">
+              <div class="card-body">
+                  <h5 class="card-title">{{ el.title }}</h5>
+                  <p class="card-text">{{ el.price }} руб.</p>
+              </div>
+            </div>
+        {% endfor%}
+    </div>
 {% endblock %}
