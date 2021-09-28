@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def index(request):
@@ -12,5 +11,9 @@ def catalog(request):
 
 def about(request):
     return render(request, 'main/about.html')
+
+
+def sale(request):
+    return render(request, 'main/sale.html')
 
 

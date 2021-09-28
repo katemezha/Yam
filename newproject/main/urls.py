@@ -20,5 +20,5 @@ urlpatterns = [
     path('', views.index),
     path('catalog', views.catalog),
     path('about-us', views.about),
-
+    path('sale', views.sale)
 ]

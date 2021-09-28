@@ -1,48 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Yam</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Oswald&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<h1>Yam</h1>
-		<p>Необычные сладости со всего мира!</p>
-		<div class='nav'>
-			<a href="index.html" class="active">Каталог</a>
-			<a href="str2.html">Администратору</a>
-			<a href="str3.html">Отзывы</a>
-			<a href="str4.html">О нас</a>
-		</div>
-	</header>
-	<div class="container1">
-		<div class="card">
-			<img src="pr1.png">
-			<p class="card.name">Напиток Аризона</p>
-			<p class='price'>99руб.</p>
-		</div>
-		<div class="card">
-			<img src="">
-			<p class="card.name"></p>
-			<p class='price'></p>
-		</div>
-		<div class="card">
-			<img src="">
-			<p class="card.name"></p>
-			<p class='price'></p>
-		</div>
-		<div class="card">
-			<img src="">
-			<p class="card.name"></p>
-			<p class='price'></p>
-		</div>
-	</div>
-	<footer>
-		<p>Продуктовый Магазин</p>
-		<a href="about.html">О разработке</a>
-		<a href="https://vk.com/kate_megnik">Межникова Екатерина</a>
-	</footer>
-</body>
-</html>
+{% extends 'main/base.html' %}
+
+
+{% block title %} Yam {% endblock %}
+
+
+{% block content %}
+    <h1>Yam</h1>
+	<p>Необычные сладости со всего мира!</p>
+{% endblock %}
