@@ -12,11 +12,12 @@ def catalog(request):
 
 
 def about(request):
-    return render(request, 'main/about.html')
+    comments = Comments.objects.all()
+    return render(request, 'main/about.html', {'comments': comments})
 
 
 def sale(request):
-    sale_products = Sales.objects.sort()
+    sale_products = Sales.objects.order_by('price')
     return render(request, 'main/sale.html', {'products': sale_products})
 
 

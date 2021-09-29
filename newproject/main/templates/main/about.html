@@ -7,4 +7,12 @@
 {% block content %}
     <h1>About</h1>
 	<p>Необычные сладости со всего мира!</p>
+    <div class="container">
+        {% for el in comments %}
+            <div class="alert alert-info" role="alert">
+                <h5>{{ el.name }}</h5>
+                <p>{{ el.comment }}</p>
+            </div>
+        {% endfor%}
+    </div>
 {% endblock %}
