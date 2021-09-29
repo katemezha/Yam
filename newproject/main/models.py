@@ -32,3 +32,5 @@ class Makers(models.Model):
         title = models.CharField('Наименование', max_length=50)
         product = models.CharField('Наименование', max_length=50)
         email = models.CharField('Наименование', max_length=50)
+
+
