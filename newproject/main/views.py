@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+
 from .models import Products, Locations, Sales, Promos, Makers, Comments
 
 
